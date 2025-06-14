@@ -120,7 +120,7 @@ You can deploy this app using platforms like:
 - **Streamlit Cloud** (for frontend)
 - Or use Docker containers for both backend and frontend.
 
-
+Deployed Link: [SER](https://speechemotionrecognition-kk.streamlit.app/)
 ---
 
 ## Author
