@@ -49,9 +49,10 @@ if uploaded_file is not None:
 
             try:
                 response = requests.post(
-                    "http://localhost:5050/predict",
+                    f"{backend_url}/predict",
                     files={'file': uploaded_file}
                 )
+
                 if response.ok:
                     result = response.json()
                     st.success("Prediction Complete!")
