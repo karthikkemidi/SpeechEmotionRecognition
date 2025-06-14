@@ -30,15 +30,24 @@ Upload a `.wav` audio file to the app, and it will analyze and display:
 SpeechEmotionRecognition/
 ├── backend/
 │   ├── ser/
-│   │   ├── models/                # Trained ML models (.joblib files)
-│   │   ├── utils.py               # Feature extraction and prediction utils
-│   │   └── main.py                # Flask backend API
-│   ├── requirements.txt           # Backend dependencies
-│   └── ...
+│   │   ├── __init__.py
+│   │   ├── main.py                      # Flask app entrypoint
+│   │   ├── utils.py                     # Feature extraction & prediction functions
+│   │   ├── models/
+│   │   │   ├── audio_type_classifier.joblib
+│   │   │   └── emotion_classifier.joblib
+│   │   └── requirements.txt             # Backend dependencies
+│   └── serenv/                         # Virtual environment folder (optional, usually excluded from git)
+│
 ├── frontend/
-│   └── streamlit_app.py           # Streamlit frontend app
-├── README.md
-└── ...
+│   ├── streamlit_app.py                # Streamlit frontend app
+│   ├── requirements.txt                # Frontend dependencies (can be combined with backend if preferred)
+│
+├── .gitignore                         # To exclude venv, __pycache__, etc.
+├── README.md                         # Project overview and instructions
+├── LICENSE                           # License file (e.g., MIT)
+└── Dockerfile                        # (Optional) Dockerfile for containerizing backend or frontend
+
 ```
 
 ---
