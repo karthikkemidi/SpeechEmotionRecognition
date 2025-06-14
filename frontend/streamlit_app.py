@@ -7,8 +7,7 @@ import numpy as np
 import io
 
 st.set_page_config(page_title="Speech and Emotion Recognition", layout="centered")
-backend_url = st.secrets["https://speechemotionrecognition-backend.onrender.com"]
-
+backend_url = st.secrets["BACKEND_API_URL"]
 # Title
 st.markdown(
     """
