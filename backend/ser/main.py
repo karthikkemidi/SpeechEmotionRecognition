@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import os
-from ser.utils import classify_and_predict_emotion
+from utils import classify_and_predict_emotion
 
 app = Flask(__name__)
 
