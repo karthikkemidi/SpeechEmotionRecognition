@@ -111,7 +111,6 @@ You can deploy this app using platforms like:
 - **Streamlit Cloud** (for frontend)
 - Or use Docker containers for both backend and frontend.
 
-Refer to the [Deployment Guide](docs/DEPLOYMENT.md) (optional) for detailed instructions.
 
 ---
 
@@ -121,6 +120,3 @@ Developed by [Karthik Kemidi](https://www.linkedin.com/in/karthik-kemidi-b4924a2
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
