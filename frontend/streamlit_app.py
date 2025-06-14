@@ -30,14 +30,14 @@ st.markdown(
 uploaded_file = st.file_uploader("Choose a .wav file", type=['wav'])
 
 def plot_waveform(audio_bytes):
-    # Load audio from bytes
     y, sr = librosa.load(io.BytesIO(audio_bytes), sr=None)
     fig, ax = plt.subplots(figsize=(10, 3))
-    librosa.display.waveshow(y, sr=sr, ax=ax)
+    librosa.display.waveshow(y, sr=sr, ax=ax, color="blue")  # <-- add color here
     ax.set_title("Audio Waveform")
     ax.set_xlabel("Time (s)")
     ax.set_ylabel("Amplitude")
     st.pyplot(fig)
+
 
 if uploaded_file is not None:
     st.audio(uploaded_file, format='audio/wav')
