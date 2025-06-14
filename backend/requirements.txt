@@ -1,0 +1,16 @@
+numpy>=1.22
+scikit-learn==1.2.2
+pandas==1.5.3
+librosa==0.9.2
+noisereduce==2.0.1
+joblib>=1.1.1
+tqdm==4.64.0
+matplotlib==3.5.3
+soundfile==0.10.3.post1
+flask==2.2.5
+streamlit==1.25.0
+requests==2.31.0
+# For deep learning (optional):
+# torch==1.13.1
+# transformers==4.21.2
+# datasets==2.10.1
